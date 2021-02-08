@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Threading.Tasks;
+using BigDataAssigment.MonitoringApp.Models;
 using Microsoft.AspNetCore.SignalR;
 
 namespace BigDataAssigment.MonitoringApp.SignalR

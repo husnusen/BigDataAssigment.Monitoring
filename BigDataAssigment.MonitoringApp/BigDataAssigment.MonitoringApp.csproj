@@ -20,5 +20,7 @@
     </ItemGroup>
     <ItemGroup>
       <Folder Include="SignalR\" />
+      <Folder Include="ForecastApiClient\" />
+      <Folder Include="Models\" />
     </ItemGroup>
 </Project>

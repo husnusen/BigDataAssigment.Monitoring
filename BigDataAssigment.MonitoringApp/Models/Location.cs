@@ -1,5 +1,5 @@
 ﻿using System;
-namespace BigDataAssigment.MonitoringApp
+namespace BigDataAssigment.MonitoringApp.Models
 {
     public class Location
     {

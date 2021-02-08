@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using System.Net.Http;
 using System.Threading.Tasks;
+using BigDataAssigment.MonitoringApp.Models;
 using Flurl;
 using Flurl.Http;
 
-namespace BigDataAssigment.MonitoringApp
+namespace BigDataAssigment.MonitoringApp.ForecastApiClient
 {
     public class ForecastApiWrapper :IForecastApiWrapper
     {
@@ -21,7 +22,6 @@ namespace BigDataAssigment.MonitoringApp
                 return _httpClient;
             }
         }
-
 
         public async Task<IList<Forecast>> GetForecasts() {
 

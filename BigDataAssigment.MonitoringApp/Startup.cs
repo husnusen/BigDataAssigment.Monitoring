@@ -1,7 +1,6 @@
-﻿using System;
+﻿using BigDataAssigment.MonitoringApp.ForecastApiClient;
 using BigDataAssigment.MonitoringApp.SignalR;
 using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -21,6 +20,8 @@ namespace BigDataAssigment.MonitoringApp
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddSignalR();
+            services.AddScoped<IForecastApiWrapper, ForecastApiWrapper>();
+
             services.Configure<ConsoleLifetimeOptions>(options =>  
                 options.SuppressStatusMessages = true);
 
